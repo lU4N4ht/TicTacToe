@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+:root{
+    --light_blue: #C0D6E4;
+    --white: #FFFFFF;
+    --gray: #474747;
+    --dark_blue: #606B72;
+    --blue: #6497b1;
+    --font:'Nunito', sans-serif;
+}
+body{
+    background-color: var(--light_blue);
+    height: 90vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+} 
+body #caixa-escolha{
+    position: relative;
+    background-color: var(--white);
+    border-radius: 0.5em;
+    width: 40em;
+    height: 30em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#caixa-escolha h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--dark_blue);
+    border-bottom: 0.01em solid var(--light_blue);
+    letter-spacing: 0.2em;
+}
+#caixa-escolha h3{
+    font-weight: 400;
+    color: var(--gray);
+    letter-spacing: 0.1em;
+}
+.personagem-img{
+    display: flex;
+    justify-content: space-between;
+}
+.player1{
+    height: 5.5em;
+}
+.player2{
+    height: 5.5em;
+}
+.escolha-personagem{
+    display: flex;
+    justify-content: space-between;
+}
+.escolha-personagem button{
+    background-color: var(--light_blue);
+    border: none;
+    width: 8em;
+    height: 3em;
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+.escolha-personagem button:hover{
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--blue);
+    transform: translateY(-0.1em);
+}
+#area-jogo .fundo-jogador{
+    background-color: var(--white);
+    border-radius: 0.5em;
+    width: 40em;
+    height: 3em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#area-jogo .jogo{
+    margin-top: 20px;
+}
+#area-jogo section{
+    display: flex;
+}
+#area-jogo section span{
+    border-radius: 0.5em;
+    display: block;
+    margin: 3px;
+    height: 6.5em;
+    width: 6.5em;
+    background-color: var(--white);
+}
