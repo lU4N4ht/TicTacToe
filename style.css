@@ -49,10 +49,10 @@ body #caixa-escolha{
     justify-content: space-between;
 }
 .player1{
-    height: 5.5em;
+    height: 6.5em;
 }
 .player2{
-    height: 5.5em;
+    height: 6.5em;
 }
 .escolha-personagem{
     display: flex;
@@ -80,9 +80,13 @@ body #caixa-escolha{
     border-radius: 0.5em;
     width: 40em;
     height: 3em;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+.jogador{
+    display: flex;
+    gap: 8em;
 }
 #area-jogo .jogo{
     margin-top: 20px;
