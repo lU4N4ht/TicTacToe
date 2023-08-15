@@ -1,26 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font);
 }
-:root{
+
+:root {
     --light_blue: #C0D6E4;
     --white: #FFFFFF;
     --gray: #474747;
     --dark_blue: #606B72;
     --blue: #6497b1;
-    --font:'Nunito', sans-serif;
+    --background_white: #EEEEEE;
+    --font: 'Nunito', sans-serif;
 }
-body{
+
+body {
     background-color: var(--light_blue);
     height: 90vh;
     display: grid;
     justify-content: center;
     align-items: center;
     gap: 1em;
-} 
-body #caixa-escolha{
+}
+
+body #caixa-escolha {
     position: relative;
     background-color: var(--white);
     border-radius: 0.5em;
@@ -30,7 +34,8 @@ body #caixa-escolha{
     justify-content: center;
     align-items: center;
 }
-#caixa-escolha h1{
+
+#caixa-escolha h1 {
     display: flex;
     justify-content: center;
     font-size: 2em;
@@ -39,26 +44,28 @@ body #caixa-escolha{
     border-bottom: 0.01em solid var(--light_blue);
     letter-spacing: 0.2em;
 }
-#caixa-escolha h3{
+
+#caixa-escolha h3 {
     font-weight: 400;
     color: var(--gray);
     letter-spacing: 0.1em;
 }
-.personagem-img{
+
+.personagem-img {
     display: flex;
     justify-content: space-between;
 }
-.player1{
+
+.player {
     height: 6.5em;
 }
-.player2{
-    height: 6.5em;
-}
-.escolha-personagem{
+
+.escolha-personagem {
     display: flex;
     justify-content: space-between;
 }
-.escolha-personagem button{
+
+.escolha-personagem button {
     background-color: var(--light_blue);
     border: none;
     width: 8em;
@@ -69,13 +76,15 @@ body #caixa-escolha{
     cursor: pointer;
     transition: 0.4s all ease;
 }
-.escolha-personagem button:hover{
+
+.escolha-personagem button:hover {
     font-weight: 600;
     color: var(--white);
     background-color: var(--blue);
     transform: translateY(-0.1em);
 }
-#area-jogo .fundo-jogador{
+
+/*#area-jogo .fundo-jogador{
     background-color: var(--white);
     border-radius: 0.5em;
     width: 40em;
@@ -83,6 +92,22 @@ body #caixa-escolha{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#area-jogo .fundo-jogador span{
+    font-weight: 600;
+    text-align: center;
+    width: 13em;
+    padding: 0.5em 0;
+    border-radius: 0.2em;
+    cursor: default;
+}
+.fundo-jogador span.ativo{
+    background-color: var(--light_blue);
+    color: var(--white);
+}
+.fundo-jogador .slider{
+    position: absolute;
+
 }
 .jogador{
     display: flex;
@@ -97,8 +122,28 @@ body #caixa-escolha{
 #area-jogo section span{
     border-radius: 0.5em;
     display: block;
+    text-align: center;
     margin: 3px;
     height: 6.5em;
     width: 6.5em;
     background-color: var(--white);
+}*/
+.container{
+    margin: 0 auto;
+    max-width: 40em;
+}
+.game-area{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.box{
+    height: 11.5em;
+    width: 11.5em;
+    background-color: var(--white);
+    margin: 0.5em 0.1em;
+    border-radius: 0.5em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }

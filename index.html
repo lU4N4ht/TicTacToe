@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="./img/logo_page 1.png"/>
+    <link rel="icon" type="image/jpg" href="./img/logo_page 1.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet">
@@ -11,44 +12,41 @@
     <script src="main.js" defer></script>
     <title>Tic!Tac!Toe!</title>
 </head>
+
 <body>
     <section id="caixa-escolha">
         <h1>GATO DA VELHA</h1>
-            <h3>Escolha um GATINHO para jogar:</h3>
-            <div class="personagem-img">
-                <img src="./img/player1__escolha 1.png" alt="player-1" class="player1">
-                <img src="./img/player2_escolha 1.png" alt="player-2" class="player2">
-            </div>
-            <div class="escolha-personagem">
-                <button class="primeiro-jogador">Mustang</button>
-                <button class="segundo-jogador">Tequila</button>
+        <h3>Escolha um GATINHO para jogar:</h3>
+        <div class="personagem-img">
+            <img src="./img/player1__escolha 1.png" alt="player-1" class="player 1">
+            <img src="./img/player2_escolha 1.png" alt="player-2" class="player 2">
+        </div>
+        <div class="escolha-personagem">
+            <button class="primeiro-jogador">Mustang</button>
+            <button class="segundo-jogador">Tequila</button>
         </div>
     </section>
-    <section id="area-jogo">
-        <div class="fundo-jogador">
+
+
+    <section class="container">
+        <!--<div class="fundo-jogador">
             <div class="jogador">
-                <span class="vez-jogador1">Vez do Mustang</span>
+                <span class="vez-jogador1 ativo">Vez do Mustang</span>
                 <span class="vez-jogador2">Vez da Tequila</span>
+                <div class="slider"></div>
             </div>
-        </div> 
-        <div class="jogo">
-        <section>
-            <span class="box1"></span>
-            <span class="box2"></span>
-            <span class="box3"></span>
-        </section>
-        <section>
-            <span class="box4"></span>
-            <span class="box5"></span>
-            <span class="box6"></span>
-        </section>
-        <section>
-            <span class="box7"></span>
-            <span class="box8"></span>
-            <span class="box9"></span>
-        </section>
-    </div>
+        </div> -->
+        <div class="game-area">
+            <div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+        </div>
     </section>
-     
 </body>
 </html>
