@@ -186,7 +186,7 @@ body #caixa-selecao {
   animation: fadeIn 0.3s ease-in-out;
 }
 
-.oculto {
+.hidden {
   display: none;
 }
 
