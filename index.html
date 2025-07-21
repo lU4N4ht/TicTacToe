@@ -2,51 +2,82 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="./img/logo_page 1.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/jpg" href="./assets/img/logo_page 1.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/root.css" />
+    <audio id="musica-fundo" loop>
+        <source src="./assets/audio/soundtrack.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="./assets/js/main.js" defer></script>
     <title>Tic!Tac!Toe!</title>
 </head>
 
 <body>
-    <section id="caixa-escolha">
-        <h1>GATO DA VELHA</h1>
-        <h3>Escolha um GATINHO para jogar:</h3>
-        <div class="personagem-img">
-            <img src="./img/player1__escolha 1.png" alt="player-1" class="player 1">
-            <img src="./img/player2_escolha 1.png" alt="player-2" class="player 2">
-        </div>
-        <div class="escolha-personagem">
-            <button class="primeiro-jogador">Mustang</button>
-            <button class="segundo-jogador">Tequila</button>
+    <section id="caixa-selecao">
+        <audio id="miado-mustang">
+            <source src="./assets/audio/meow_mustang.mp3" type="audio/mpeg" />
+        </audio>
+        <audio id="miado-tequila">
+            <source src="./assets/audio/meow_tequila.mp3" type="audio/mpeg" />
+        </audio>
+
+        <div class="conteudo-modal">
+            <h1>GATO DA VELHA</h1>
+            <h3>Escolha um GATINHO para jogar:</h3>
+            <div class="opcoes-gatos">
+                <div class="opcao-personagem mustang">
+                    <img src="./assets/img/player1__escolha.png" alt="jogador-1" class="jogador-um" />
+                    <button class="botao-primeiro-jogador">Mustang</button>
+                </div>
+                <div class="opcao-personagem tequila">
+                    <img src="./assets/img/player2_escolha.png" alt="jogador-2" class="jogador-dois" />
+                    <button class="botao-segundo-jogador">Tequila</button>
+                </div>
+            </div>
         </div>
     </section>
-
 
     <section class="container">
-        <!--<div class="fundo-jogador">
-            <div class="jogador">
-                <span class="vez-jogador1 ativo">Vez do Mustang</span>
-                <span class="vez-jogador2">Vez da Tequila</span>
-                <div class="slider"></div>
+        <div class="fundo-jogador">
+            <div class="area-jogadores">
+                <div class="caixa-jogador jogador-1">
+                    <img src="./assets/img/mustang_avatar.png" alt="vez-mustang" class="avatar-da-vez" />
+                    <span>Mustang</span>
+                </div>
+                <div class="caixa-jogador jogador-2">
+                    <img src="./assets/img/tequila_avatar.png" alt="vez-tequila" class="avatar-da-vez" />
+                    <span>Tequila</span>
+                </div>
+                <div class="controle-slider"></div>
             </div>
-        </div> -->
-        <div class="game-area">
-            <div class="box" id="0"></div>
-            <div class="box" id="1"></div>
-            <div class="box" id="2"></div>
-            <div class="box" id="3"></div>
-            <div class="box" id="4"></div>
-            <div class="box" id="5"></div>
-            <div class="box" id="6"></div>
-            <div class="box" id="7"></div>
-            <div class="box" id="8"></div>
+        </div>
+
+        <div class="area-jogo">
+            <div class="caixa" id="0"></div>
+            <div class="caixa" id="1"></div>
+            <div class="caixa" id="2"></div>
+            <div class="caixa" id="3"></div>
+            <div class="caixa" id="4"></div>
+            <div class="caixa" id="5"></div>
+            <div class="caixa" id="6"></div>
+            <div class="caixa" id="7"></div>
+            <div class="caixa" id="8"></div>
         </div>
     </section>
+
+    <div id="popup" class="popup oculto">
+        <div class="conteudo-popup">
+            <p id="mensagem-popup"></p>
+            <button id="botao-reiniciar">Jogar de Novo</button>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,230 @@
+body {
+    background-color: var(--light_blue);
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+    overflow: hidden;
+}
+
+body #caixa-selecao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.763);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+#caixa-selecao .conteudo-modal {
+    background-color: var(--white);
+    border-radius: 0.5em;
+    width: 40em;
+    height: 30em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.818);
+}
+
+.conteudo-modal h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--dark_blue);
+    border-bottom: 0.01em solid var(--light_blue);
+    letter-spacing: 0.2em;
+}
+
+.conteudo-modal h3 {
+    font-weight: 400;
+    color: var(--gray);
+    letter-spacing: 0.1em;
+}
+
+.opcoes-gatos {
+    display: flex;
+    gap: 8em;
+}
+
+.opcao-personagem {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.jogador-um, .jogador-dois {
+    height: 6.5em;
+}
+
+.opcoes-gatos button {
+    background-color: var(--light_blue);
+    border: none;
+    width: 9em;
+    height: 3em;
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+.opcoes-gatos button:hover {
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--blue);
+    transform: translateY(-0.1em);
+}
+
+.fundo-jogador {
+  background-color: var(--white);
+  border-radius: 0.5em;
+  width: 38em;
+  height: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.area-jogadores {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+.caixa-jogador {
+  width: 50%;
+  text-align: center;
+  padding: 0.5em 0;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: var(--dark_blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6em;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.caixa-jogador.active {
+  color: var(--white);
+}
+
+.controle-slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 51%;
+  height: 100%;
+  background-color: var(--slider_blue);
+  border-radius: 0.5em;
+  z-index: 1;
+  transition: transform 0.4s ease;
+}
+
+.avatar-da-vez {
+  height: 2.5em;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 40em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.area-jogo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.caixa {
+    height: 11.5em;
+    width: 11.5em;
+    background-color: var(--white);
+    margin: 0.5em 0.1em;
+    border-radius: 0.5em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.gatos-doodle {
+    width: 120px;
+    height: auto;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.oculto {
+  display: none;
+}
+
+.conteudo-popup {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 40px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.conteudo-popup p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--gray);
+}
+
+#botao-reiniciar {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: var(--light_blue);
+  color: var(--gray);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s all ease;
+  font-weight: 400;
+}
+
+#botao-reiniciar:hover {
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--blue);
+    transform: translateY(-0.1em);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
